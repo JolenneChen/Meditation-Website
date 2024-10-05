@@ -72,3 +72,14 @@ html{
     /* sets the opacity of the elemt to 0.5(semi transparent) */
     opacity: 0.5;
 }
+
+.focus-heading{
+    /* place the element within a grid area named "h" */
+    grid-area: h;
+    /* set the width to 50% of the viewport width */
+    width: 50vw;
+    height: 10vw;
+    padding: 50px;
+    margin-left: 20vw;
+    /* color: #fff; */
+}
