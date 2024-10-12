@@ -73,6 +73,28 @@ html{
     opacity: 0.5;
 }
 
+.focus div{
+    background-color: lightsteelblue;
+    width: 10px;
+    height: 10px;
+    margin-left: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    animation: breath 8s ease infinite none running ;
+
+
+}
+
+@keyframes breath {
+    25%,
+    50% {
+        background-color: #54e316;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+}
+
 .focus-heading{
     /* place the element within a grid area named "h" */
     grid-area: h;
@@ -80,6 +102,45 @@ html{
     width: 50vw;
     height: 10vw;
     padding: 50px;
-    margin-left: 20vw;
-    /* color: #fff; */
+    margin-left: 0vw;
+    color: #fff;
+    font-size: 5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus-text{
+    grid-area: s;
+    width: 70vw;
+    height: 20vh;
+    padding-left: 10vw;
+    margin-left: 0vw;
+    color: #fff;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio {
+    grid-area: a;
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0.5;
+    margin-left: 0vw;
+
+}
+
+.audio img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.video-button{
+    
 }
