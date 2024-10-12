@@ -13,7 +13,7 @@ html{
 .video{
     /* width of the video to 100% of the viewport height(vh)*/
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -21,7 +21,6 @@ html{
 }
 
 .video video{
-    width: 50%;
     /* position at center */
     position: absolute;
     top: 50%;
@@ -36,12 +35,12 @@ html{
 }
 
 /* for small screens */
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     .video video{
         height: 100%;
         
     }
-}
+} */
 
 .app{
     /* defining the rows and the columns */
@@ -49,10 +48,10 @@ html{
     /* create 6 rows and columns with names */
     /* h-heading, f-focus, s-text, a-audio, v-video button  */
     grid-template-areas: 
-    "h h h h v v"
-    "f f f f v v"
-    "s s s s v v"
-    "a a a a v v";
+    "h h h h h v"
+    "f f f f f v"
+    "s s s s s v"
+    "a a a a a v";
 }
 
 .focus{
@@ -62,7 +61,7 @@ html{
     /* sets the width to 80% of the viewport width */
     width: 80vw;
     /* set the height to 50% of the viewport height */
-    height: 50vw;
+    height: 50vh;
     /* display the element of a grid container */
     display: grid;
     /* horizontly center the content within the grid container */
@@ -100,9 +99,10 @@ html{
     grid-area: h;
     /* set the width to 50% of the viewport width */
     width: 50vw;
-    height: 10vw;
+    height: 10vh;
     padding: 50px;
     margin-left: 0vw;
+    margin-top: 1vw;
     color: #fff;
     font-size: 5vh;
     display: grid;
@@ -142,5 +142,20 @@ html{
 }
 
 .video-button{
-    
+    grid-area: v;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10% 0;
+    opacity: 0.5;
+}
+
+.video-button img{
+    width: 75px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 15px #222);
+
 }

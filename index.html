@@ -32,7 +32,7 @@
         }
     </script>
     <div class="video">
-        <video autoplay loop>
+        <video autoplay loop id="bg-video">
             <source src="video/beach.mp4" type="video/mp4">
             Error
         </video>
@@ -45,22 +45,20 @@
             <div class=""></div>
         </div>
         <div class="focus-text" id="focus-text">
-            <p>
+            <h2>
                 Breath in through the nose as the circle expands <br>hold, and release through the mouth as it
                 contracts. <br>Repeat as needed.
-            </p>
+            </h2>
         </div>
         <div class="audio">
             <audio id="player" autoplay loop>
                 <source src="Audio/beach.mp3" type="audio/mpeg">
             </audio>
-            <div id="player">
                 <img src="Images/pause button.png" alt="Pause" width="50px" onclick="pause()">
                 <img src="Images/volume-down.png" alt="Mute" width="50px" onclick="down()">
                 <input type="range" id="VRange" min="1" max="100">
                 <img src="Images/volume-up.png" alt="Increase volume" width="50" onclick="up()">
                 <img src="Images/play button.png" alt="Play" width="50px" onclick="play()">
-            </div>
         </div>
         <div class="video-button">
             <img src="Images/beach.png" alt="Beach" onclick="videoUrl('./video/beach.mp4', './audio/beach.mp3')">
